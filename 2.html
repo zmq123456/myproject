@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>  * {
+        margin: 0;
+        padding: 0;
+      }
+     ul {
+        width: 1400%;
+        animation: 20s lbt linear infinite; 
+      animation-fill-mode: forwards;
+      display: flex;
+
+      }
+      ul:hover {
+      animation-play-state: paused;
+    }
+      .banner {
+        overflow: hidden;
+      }
+      ul li {
+        /* 鼠标变小手 */
+        cursor: pointer;
+        width: 14.285%;
+        list-style: none;
+        transition: 0.3s;
+      }
+      ul li img{
+        width: 100%;
+        height: 360px;
+      }
+      @keyframes lbt {
+      0%{}
+      100%{
+        transform: translateX(-50%);
+     
+      }
+    }
+      </style>
+</head>
+
+<body>
+    <div class="banner">
+        <ul>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner12.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner20201223.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner0619.jpg" alt=""> </li>
+            <li><img src="https://www.12306.cn/index/images/pic/banner20200707.jpg" alt=""></li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner26.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner10.jpg" alt=""> </li>
+            <!-- 重复一次 -->
+            <li> <img src="https://www.12306.cn/index/images/pic/banner12.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner20201223.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner0619.jpg" alt=""> </li>
+            <li><img src="https://www.12306.cn/index/images/pic/banner20200707.jpg" alt=""></li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner26.jpg" alt=""> </li>
+            <li> <img src="https://www.12306.cn/index/images/pic/banner10.jpg" alt=""> </li>
+        </ul>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
